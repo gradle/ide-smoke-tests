@@ -1,0 +1,9 @@
+plugins {
+    id 'groovy-base'
+}
+
+tasks.withType(GroovyCompile).configureEach {
+    it.groovyOptions.encoding("UTF-8")
+}
+
+println "Precompiled Groovy script plugin finished"

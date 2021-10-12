@@ -1,6 +1,8 @@
 plugins {
     `java-gradle-plugin`
     kotlin("jvm") version "1.5.31"
+    `groovy-gradle-plugin` // for precompiled Kotlin script plugins
+    `kotlin-dsl` // for precompiled Kotlin script plugins
 }
 
 repositories.mavenCentral()
