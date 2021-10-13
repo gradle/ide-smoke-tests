@@ -2,9 +2,20 @@
 
 ## Setup Test Environment
 
-- Install IntelliJ IDEA EAP
-- Import project
-- Check features below
+- Install required IDEs
+  - Install IntelliJ IDEA, EAP and latest stable release
+- Clone this repository
+- Update Gradle wrappers to the latest snapshot version
+- Clean projects
+  - `git clean -fdx`
+
+
+## Run test scenarios
+
+Repeat instructions for all test projects in this repositories. The test projects are the numbered folders in the root of this repository.
+
+- Import test project into IDE
+- Wait for the sync to finish
 
 ## Features to verify
 
