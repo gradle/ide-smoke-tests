@@ -16,6 +16,9 @@ Repeat instructions for all test projects in this repositories. The test project
 
 - Import test project into IDE
 - Wait for the sync to finish
+- Open the TODO tool window
+ - Iterate through all TODO items and check if they are true. 
+   - Open an issue if it's not the case
 
 ## Features to verify
 
