@@ -57,6 +57,13 @@ void renderTestPlan(Map<String, List<String>> allScenarios, String gitRevision) 
         - Clean projects
           - `git clean -fdx`
 
+        ## Document components used in the test plan:
+        
+        - [ ] Operating System:
+        - [ ] Gradle version: 
+        - [ ] IntelliJ Idea EAP version (with build number):
+        - [ ] IntelliJ Idea Stable version (with build number): 
+
         ## Verify scenarios
 
         The sample projects are located in the repository root and their name all starts with a number. For each project, execute the following steps:
