@@ -17,3 +17,4 @@ includeBuild("../platforms")
 // == Define the inner structure of this component ==
 rootProject.name = "domain-model"
 include("release") // a project for data classes that represent software releases
+

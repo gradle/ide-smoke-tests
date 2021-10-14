@@ -1,0 +1,12 @@
+plugins {
+    id('groovy-gradle-plugin')
+}
+
+gradlePlugin {
+    plugins {
+        "groovy-dummy-plugin" {
+            id = "com.example.groovy-dummy-plugin"
+            implementationClass = "com.example.GroovyDummyPlugin"
+        }
+    }
+}

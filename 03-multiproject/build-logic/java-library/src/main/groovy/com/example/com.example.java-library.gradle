@@ -1,12 +1,12 @@
 plugins {
-    id("com.example.commons")
-    id("java-library")
-    id("com.example.java-dummy-plugin")
+    id "com.example.commons"
+    id "java-library"
+    id "com.example.java-dummy-plugin"
 }
 
 testing {
     suites {
-        register<JvmTestSuite>("integTest") {
+        integTest(JvmTestSuite) {
             useJUnitJupiter()
             dependencies {
                 implementation(project)
