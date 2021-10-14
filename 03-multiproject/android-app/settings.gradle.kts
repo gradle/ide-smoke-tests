@@ -1,4 +1,3 @@
-// == Define locations for build logic ==
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -7,7 +6,6 @@ pluginManagement {
     includeBuild("../build-logic")
 }
 
-// == Define locations for components ==
 dependencyResolutionManagement {
     repositories {
         mavenCentral()
@@ -17,6 +15,5 @@ dependencyResolutionManagement {
 includeBuild("../platforms")
 includeBuild("../user-feature")
 
-// == Define the inner structure of this component ==
 rootProject.name = "android-app"
 include("app")
