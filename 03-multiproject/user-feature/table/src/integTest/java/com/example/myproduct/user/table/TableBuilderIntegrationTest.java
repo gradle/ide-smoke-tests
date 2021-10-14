@@ -9,6 +9,13 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TableBuilderIntegrationTest {
+
+    // TODO (scenario) Running integration test picks the correct test task
+    // Instructions:
+    // - Click the green triangle on the editor sidebar
+    // - Select `TableBuilderIntegrationTest`
+    // - Check if the test was executed in the context of the `integTest` task.
+
     @Test
     public void testTableBuilding() {
         List<MyProductRelease> testData = Arrays.asList(
