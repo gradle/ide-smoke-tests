@@ -27,9 +27,24 @@ workingDir.eachFile {File sampleDir ->
     }
 }
 
-renderTestPlan(allScenarios)
+renderTestPlan(allScenarios, retrieveCurrentGitRevision())
 
-void renderTestPlan(Map<String, List<String>> allScenarios) {
+String retrieveCurrentGitRevision() {
+    String gitRevisionCommand = 'git rev-parse HEAD'
+    Process process = gitRevisionCommand.execute()
+
+    StringBuilder out = new StringBuilder()
+    StringBuilder err = new StringBuilder()
+
+    process.consumeProcessOutput(out, err)
+    int status = process.waitFor()
+    if (status != 0) {
+        throw new Exception("Failed to execute '$gitRevisionCommand'. Output: $out, error: $err")
+    }
+    return out.toString().strip()
+}
+
+void renderTestPlan(Map<String, List<String>> allScenarios, String gitRevision) {
     println """
         # Test Plan
 
@@ -58,7 +73,6 @@ void renderTestPlan(Map<String, List<String>> allScenarios) {
         - add a X (red cross emoji) to the list below
     """.stripIndent(8).strip()
 
-
     allScenarios.each {project, scenarios ->
         println ""
         println "## Scenarios in `$project`"
@@ -67,6 +81,8 @@ void renderTestPlan(Map<String, List<String>> allScenarios) {
             println "- [ ] $scenario"
         }
     }
+    println ""
+    println "(Test plan generated from revision [${gitRevision.substring(0,10)}](https://github.com/gradle/ide-smoke-tests/tree/$gitRevision))"
 }
 
 boolean isSourceFile(File file) {
