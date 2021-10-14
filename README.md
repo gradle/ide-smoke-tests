@@ -1,44 +1,8 @@
 # IDE smoke tests
 
-## Setup Test Environment
+This repository contains a set of sample projects to manually verify the functionality of the IDE.
+The scenarios and the verication instructions are provided in the source files.
 
-- Install required IDEs
-  - Install IntelliJ IDEA, EAP and latest stable release
-- Clone this repository
-- Update Gradle wrappers to the latest snapshot version
-- Clean projects
-  - `git clean -fdx`
+## Render test plan
 
-
-## Run test scenarios
-
-Repeat instructions for all test projects in this repositories. The test projects are the numbered folders in the root of this repository.
-
-- Import test project into IDE
-- Wait for the sync to finish
-- Open the TODO tool window
- - Iterate through all TODO items and check if they are true. 
-   - Open an issue if it's not the case
-
-## Features to verify
-
-- Project import
-  - outcome
-  - sync output
-     - deprecation warnings
-  - popups
-- Build script editing
-  - syntax highlight
-  - code navigation
-  - code completion
-    - extensions
-    - extensions from local/remote plugins
-- Task execution
-  - compile
-  - verfication
-  - application
-- Source code editing
-  - highlighting, navigation, code completion
-  - test sources are marked as such
-  - use correct task when running tests
-    - ide offers selection of `integTest`
+The `generateTestPlan.groovy` script contains a Groovy script that generates a test plan. The result should be copy-pasted to a GitHub issue to track the progress.
