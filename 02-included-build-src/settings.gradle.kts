@@ -1,5 +1,9 @@
-// TODO (scenario) no build errors or warnings are present in the sync output
+// TODO (scenario) Project import finishes without warning
+// Instructions:
+// - Wait for the import to finish
+// - Open the `Build` tool window
+// - Check the output for warning or error messages
+// - Check the output for deprecation warnings
+
 rootProject.name = "ide-smoke-test"
 includeBuild("build-logic")
-
-// TODO (scenario) code completion available for settings script

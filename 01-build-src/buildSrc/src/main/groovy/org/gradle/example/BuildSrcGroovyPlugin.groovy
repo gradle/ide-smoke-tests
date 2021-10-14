@@ -5,7 +5,9 @@ import org.gradle.api.Project
 
 class BuildSrcGroovyPlugin implements Plugin<Project>{
     void apply(Project target) {
-        // TODO (scenario) can use another class in Groovy plugin implementation
+        // TODO (scenario) Groovy plugin implemented in buildSrc can use another class
+        // Instructions:
+        // - the statement below does not show any syntax errors and cmd+click navigates to the implementation
         new JavaBuildUtils().printString("org.gradle.example.BuildSrcGroovyPlugin applied on project " + target.getName());
     }
 }
