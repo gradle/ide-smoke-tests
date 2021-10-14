@@ -1,3 +1,13 @@
+/**
+ * Generates instructions on how to execute manual IDE smoke tests.
+ * 
+ * The script iterates through all (Java, Groovy, Kotlin and Gradle) source files, grabs the comments starting with
+ * `// TODO (scenario)` and outputs the list of scenarios along with instructions on how to perform the
+ * tests.
+ *
+ * The output uses the GitHub Markup format, so the result can be copy-pasted into a GitHub issue.
+ */
+
 File workingDir = new File(System.getProperty('user.dir'))
 Map<String, List<String>> allScenarios = [:]
 workingDir.eachFile {File sampleDir ->
