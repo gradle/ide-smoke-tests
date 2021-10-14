@@ -3,8 +3,6 @@ plugins {
     `buildsrc-java-plugin` // Known issue: IDEA navigates to generated accessor and not to the declaration
     `buildsrc-groovy-plugin`
     `buildsrc-kotlin-plugin`
-    `conventions-in-groovy-dsl`
-    `conventions-in-kotlin-dsl`
 }
 
 // TODO (scenario) class from buildSrc is available in the build script

@@ -5,6 +5,7 @@ import org.gradle.api.Project
 
 class BuildLogicGroovyPlugin implements Plugin<Project>{
     void apply(Project target) {
-        System.out.println("org.gradle.example.BuildSrcGroovyPlugin applied on project " + target.getName())
+        // TODO (scenario) can use another class in Groovy plugin implementation
+        new JavaBuildUtils().printString("org.gradle.example.BuildSrcGroovyPlugin applied on project " + target.getName());
     }
 }
