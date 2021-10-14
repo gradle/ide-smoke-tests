@@ -1,4 +1,3 @@
-// TODO (scenario) no build errors or warnings are present in the sync output
 plugins {
     // TODO (scenario) can navigate to plugin source
     `buildsrc-java-plugin` // Known issue: IDEA navigates to generated accessor and not to the declaration
