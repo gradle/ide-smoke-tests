@@ -1,0 +1,22 @@
+name: Create new test plan issue
+on: workflow_dispatch
+jobs:
+  Create-new-github-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Groovy
+        run: sudo apt-get install -y groovy
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          path: main
+      - name: Render issue template
+        run: | 
+          cd main
+          groovy generateTestPlan.groovy | tee test_plan_template.md
+      - name: Create issue
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: main/test_plan_template.md

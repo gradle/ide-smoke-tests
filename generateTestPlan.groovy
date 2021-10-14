@@ -27,25 +27,19 @@ workingDir.eachFile {File sampleDir ->
     }
 }
 
-renderTestPlan(allScenarios, retrieveCurrentGitRevision())
+renderTestPlan(allScenarios)
 
-String retrieveCurrentGitRevision() {
-    String gitRevisionCommand = 'git rev-parse HEAD'
-    Process process = gitRevisionCommand.execute()
-
-    StringBuilder out = new StringBuilder()
-    StringBuilder err = new StringBuilder()
-
-    process.consumeProcessOutput(out, err)
-    int status = process.waitFor()
-    if (status != 0) {
-        throw new Exception("Failed to execute '$gitRevisionCommand'. Output: $out, error: $err")
-    }
-    return out.toString().strip()
-}
-
-void renderTestPlan(Map<String, List<String>> allScenarios, String gitRevision) {
+void renderTestPlan(Map<String, List<String>> allScenarios) {
+    // TODO add year/week parameters
+    // TODO add assignees
     println """
+        ---
+        name: Test Plan 2021.41
+        about: Test plan for manual IDE smoke tests
+        title: Test Plan 2021.41
+        labels: test-iteration
+        ---
+
         # Test Plan
 
         ## Prerequisites
@@ -88,8 +82,6 @@ void renderTestPlan(Map<String, List<String>> allScenarios, String gitRevision) 
             println "- [ ] $scenario"
         }
     }
-    println ""
-    println "(Test plan generated from revision [${gitRevision.substring(0,10)}](https://github.com/gradle/ide-smoke-tests/tree/$gitRevision))"
 }
 
 boolean isSourceFile(File file) {
