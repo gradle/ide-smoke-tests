@@ -63,7 +63,7 @@ void renderTestPlan(List<Sample> samples) {
 
         ## 1. Set up local test environment
 
-        - Assing this ticket to yourself and move it to the the _In Progress_ column.
+        - Assing this ticket to yourself and move it to the _In Progress_ column.
         - Install IntelliJ IDEA, EAP and latest stable release
           - Tip: you can use the [Toolbox App](https://www.jetbrains.com/toolbox-app/) to manage multiple installations
         - Clone [this](https://github.com/gradle/ide-smoke-tests) repository
