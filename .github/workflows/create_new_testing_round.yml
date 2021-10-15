@@ -1,5 +1,8 @@
 name: Create new test plan issue
-on: workflow_dispatch
+on: 
+  - workflow_dispatch
+  - schedule:
+      - cron: "0 8 */14 * *" # Every 2 weeks. See https://crontab.guru/#0_8_*/14_*_*
 jobs:
   Create-new-github-issue:
     runs-on: ubuntu-latest
