@@ -63,12 +63,13 @@ void renderTestPlan(List<Sample> samples) {
 
         ## 1. Set up local test environment
 
-        - Assing this ticket to yourself and move it to the _In Progress_ column.
-        - Install IntelliJ IDEA, EAP and latest stable release
+        - [ ] Assing this ticket to yourself and move it to the _In Progress_ column.
+        - [ ] Install IntelliJ IDEA, EAP and latest stable release
           - Tip: you can use the [Toolbox App](https://www.jetbrains.com/toolbox-app/) to manage multiple installations
-        - Clone [this](https://github.com/gradle/ide-smoke-tests) repository
-        - Update Gradle wrappers in all sample projects to the latest snapshot
-        - Run `git clean -fdx` to remove build artifacts from all sample projects
+        - [ ] Clone [this](https://github.com/gradle/ide-smoke-tests) repository
+        - [ ] Update Gradle wrappers in all sample projects to the latest snapshot
+          - One-liner bash update command: `export gradleVersion=\$(curl -s https://services.gradle.org/versions/nightly | jq -r '.version') && for sample in \$(ls | grep -e '^[0-9][0-9].*'); do cd \$sample; gradle wrapper --gradle-version \$gradleVersion; cd -; done`
+        - [ ] Run `git clean -fdx` to remove build artifacts from all sample projects
 
         ## 2. Document components:
         
@@ -86,7 +87,8 @@ void renderTestPlan(List<Sample> samples) {
         - Use text search to locate the scenario (listed below) in the build and follow the instructions
         - Check off the verified scenario in the list below
 
-        In case of a failure
+        In case of a failure:
+
         - Verify the same scenario in the latest released IDEA version
         - Open an issue at https://youtrack.jetbrains.com
         - Link the issue in the sample project:
@@ -105,9 +107,11 @@ void renderTestPlan(List<Sample> samples) {
     println """
         ## 4. Finalize
         
-        - Close this issue
-        - Consider improving the test plan
-          - If you find that some scenarios are incorrect, redundant, or missing, please provide a PR and ask the @bt-support-team for a review
+        - [ ] If you encountered a scenario that has been fixed, then remove the `Known issue` reference from the sources.
+        - [ ] Commit and push all changes (including the wrapper update)
+        - [ ] Close this issue
+        - [ ] Consider improving the test plan
+          - If you find that some scenarios are incorrect, redundant, missing, etc. please provide a PR and ask the @bt-support-team for a review
           - You can update the issue template here: https://github.com/gradle/ide-smoke-tests/blob/main/generateTestPlan.groovy
     """.stripIndent(8)
 }
