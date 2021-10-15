@@ -9,4 +9,4 @@ tasks.register("checkFeatures") {
 // Instructions:
 // - Open the `Gradle tool window`
 // - Click `Execute Gradle Task` on the toolbar
-// - Run the :app:bootRun task
+// - Run the :server-application:app:bootRun task
