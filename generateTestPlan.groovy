@@ -8,40 +8,48 @@
  * The output uses the GitHub Markup format, so the result can be copy-pasted into a GitHub issue.
  */
 
-renderTestPlan(collectAllScenarios(new File(System.getProperty('user.dir'))))
+import groovy.transform.Canonical
+import static groovy.io.FileType.FILES
 
-Map<String, List<String>> collectAllScenarios(File rootDir) {
-    Map<String, List<String>> allScenarios = [:]
-    rootDir.eachFile { File sampleDir ->
-        if (sampleDir.directory && sampleDir.name.matches('\\d+-.*')) {
+renderTestPlan(collectAllSamples(new File(System.getProperty('user.dir'))))
+
+List<Sample> collectAllSamples(File rootDir) {
+    rootDir.listFiles()
+        .findAll { File file -> file.directory && file.name.matches('\\d+-.*') }
+        .collect { File sampleDir ->
             String sampleName = sampleDir.name.replaceFirst('\\d+-', '')
-            List scenarios = []
-            sampleDir.eachFileRecurse { File file ->
-                if (isSourceFile(file)) {
-                    file.text.eachLine { line ->
-                        if (line.contains("TODO (scenario)")) {
-                            scenarios += line.replaceFirst('TODO \\(scenario\\)', '').replaceFirst('//', '').replaceFirst('\\s+', '')
-                        }
-                    }
-                }
+            List<Scenario> scenarios = findAndReadAllScenarios(sampleDir)
+            new Sample(sampleName, scenarios)
+        }
+}
+
+List<Scenario> findAndReadAllScenarios(File sampleDir) {
+    List<Scenario> scenarios = []
+    sampleDir.eachFileRecurse(FILES) { File file ->
+        scenarios += readScenarios(file)
+    }
+    scenarios
+}
+
+List<Scenario> readScenarios(File file) {
+    List<Scenario> scenarios = []
+    if (isSourceFile(file)) {
+        file.text.eachLine { line ->
+            if (line.contains("TODO (scenario)")) {
+                scenarios += new Scenario(line.replaceFirst('TODO \\(scenario\\)', '').replaceFirst('//', '').replaceFirst('\\s+', '') as String)
             }
-            allScenarios[sampleName] = scenarios
         }
     }
-    allScenarios
+    scenarios
 }
 
 boolean isSourceFile(File file) {
-    if (file.directory) {
-        return false
-    } else {
-        ['.gradle.kts', '.gradle', '.groovy', '.kt', '.java'].find { file.name.endsWith(it) }
-    }
+    ['.gradle.kts', '.gradle', '.groovy', '.kt', '.java'].find { file.name.endsWith(it) }
 }
 
-void renderTestPlan(Map<String, List<String>> allScenarios) {
+void renderTestPlan(List<Sample> samples) {
     Calendar calendar = Calendar.getInstance()
-    def year = calendar.get(Calendar.YEAR).getClass()
+    def year = calendar.get(Calendar.YEAR)
     def weekOfYear = calendar.get(Calendar.WEEK_OF_YEAR)
     println """
         ---
@@ -86,12 +94,12 @@ void renderTestPlan(Map<String, List<String>> allScenarios) {
         - add an X (red cross emoji) to the list below and link the created issue there as well
     """.stripIndent(8).strip()
 
-    allScenarios.each {project, scenarios ->
+    samples.each { Sample sample ->
         println ""
-        println "### Scenarios in `$project`"
+        println "### Scenarios in `$sample.name`"
         println ""
-        scenarios.each { scenario ->
-            println "- [ ] $scenario"
+        sample.scenarios.each { Scenario scenario ->
+            println "- [ ] ${scenario.name}"
         }
     }
     println """
@@ -101,5 +109,16 @@ void renderTestPlan(Map<String, List<String>> allScenarios) {
         - Consider improving the test plan
           - If you find that some scenarios are incorrect, redundant, or missing, please provide a PR and ask the @bt-support-team for a review
           - You can update the issue template here: https://github.com/gradle/ide-smoke-tests/blob/main/generateTestPlan.groovy
-    """.stripIndent(8).stripTrailing()
+    """.stripIndent(8)
+}
+
+@Canonical
+class Sample {
+    final String name
+    final List<Scenario> scenarios
+}
+
+@Canonical
+class Scenario {
+    final String name
 }
