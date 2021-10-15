@@ -109,6 +109,7 @@ void renderTestPlan(List<Sample> samples) {
         
         - [ ] If you encountered a scenario that has been fixed, then remove the `Known issue` reference from the sources.
         - [ ] Commit and push all changes (including the wrapper update)
+        - [ ] Tag the issue with the `new-regresssion-reported` label if you reported something to JetBrains
         - [ ] Close this issue
         - [ ] Consider improving the test plan
           - If you find that some scenarios are incorrect, redundant, missing, etc. please provide a PR and ask the @bt-support-team for a review
