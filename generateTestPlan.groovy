@@ -68,7 +68,7 @@ void renderTestPlan(List<Sample> samples) {
           - Tip: you can use the [Toolbox App](https://www.jetbrains.com/toolbox-app/) to manage multiple installations
         - [ ] Clone [this](https://github.com/gradle/ide-smoke-tests) repository
         - [ ] Update Gradle wrappers in all sample projects to the latest snapshot
-          - One-liner bash update command: `export gradleVersion=\$(curl -s https://services.gradle.org/versions/nightly | jq -r '.version') && for sample in \$(ls | grep -e '^[0-9][0-9].*'); do cd \$sample; gradle wrapper --gradle-version \$gradleVersion; cd -; done`
+          - One-liner bash update command: `gradleVersion=\$(curl -s https://services.gradle.org/versions/nightly | jq -r '.version') && for sample in \$(ls | grep -e '^[0-9][0-9].*'); do cd \$sample; ./gradlew wrapper --gradle-version \$gradleVersion; cd -; done`
         - [ ] Run `git clean -fdx` to remove build artifacts from all sample projects
 
         ## 2. Document components:
