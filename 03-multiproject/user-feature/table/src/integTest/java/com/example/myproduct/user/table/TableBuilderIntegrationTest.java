@@ -13,7 +13,7 @@ class TableBuilderIntegrationTest {
     // TODO (scenario) Running integration test picks the correct test task
     //   Instructions:
     //   - Click the green triangle on the editor sidebar
-    //   - Select `TableBuilderIntegrationTest`
+    //   - Select `Run TableBuilderIntegrationTest`
     //   - Check if the test was executed in the context of the `integTest` task.
 
     @Test
