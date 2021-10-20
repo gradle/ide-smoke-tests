@@ -15,5 +15,5 @@ group = "${group}.model"
 //   Instructions:
 //   - Verify that `groovyDummy {}` block is not marked with a compiler error and the `myProp` property can be configured in the closure
 groovyDummy {
-    myProp.set("value") // Known issue: https://youtrack.jetbrains.com/issue/KTIJ-19884
+    myProp.set("value") // Known issue: https://youtrack.jetbrains.com/issue/KTIJ-19483
 }
