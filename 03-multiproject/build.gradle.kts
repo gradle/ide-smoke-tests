@@ -6,7 +6,7 @@ tasks.register("checkFeatures") {
     dependsOn(gradle.includedBuild("user-feature").task(":table:check"))
 }
 // TODO (scenario) Runs application with Gradle task from included build
-// Instructions:
-// - Open the `Gradle tool window`
-// - Click `Execute Gradle Task` on the toolbar
-// - Run the :server-application:app:bootRun task
+//   Instructions:
+//   - Open the `Gradle tool window`
+//   - Click `Execute Gradle Task` on the toolbar
+//   - Run the :server-application:app:bootRun task

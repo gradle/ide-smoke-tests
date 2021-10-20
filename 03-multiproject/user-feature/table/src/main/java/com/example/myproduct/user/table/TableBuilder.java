@@ -11,10 +11,10 @@ import java.util.stream.Collectors;
 public class TableBuilder {
 
     // TODO (scenario) Resources from test configuration are not available in the main source set
-    // Instructions:
-    // - Uncomment the code snippet below and verify that
-    //   - it gives compilation error
-    //   - it offers a quick fix to add a dependency on the test module
+    //   Instructions:
+    //   - Uncomment the code snippet below and verify that
+    //     - it gives compilation error
+    //     - it offers a quick fix to add a dependency on the test module
 
     // private static com.example.myproduct.user.table.TableBuilderIntegrationTest();
 
