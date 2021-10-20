@@ -5,5 +5,5 @@
 //   - Check the output for warning or error messages
 //   - Check the output for deprecation warnings
 
-rootProject.name = "ide-smoke-test"
+rootProject.name = "ide-smoke-test-included-build-src"
 includeBuild("build-logic")
