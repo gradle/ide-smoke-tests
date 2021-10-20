@@ -10,3 +10,4 @@ tasks.register("checkFeatures") {
 //   - Open the `Gradle tool window`
 //   - Click `Execute Gradle Task` on the toolbar
 //   - Run the :server-application:app:bootRun task
+//   - Stop the running server
