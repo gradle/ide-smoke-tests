@@ -1,0 +1,14 @@
+plugins {
+    id("java-gradle-plugin")
+}
+
+repositories.mavenCentral()
+
+gradlePlugin {
+    plugins {
+        create("java-plugin") {
+            id = "buildsrc-java-plugin"
+            implementationClass = "org.gradle.example.BuildSrcJavaPlugin"
+        }
+    }
+}
