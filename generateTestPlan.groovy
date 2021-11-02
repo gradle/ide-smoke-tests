@@ -71,7 +71,7 @@ void renderTestPlan(List<Sample> samples) {
           - One-liner bash update command: `gradleVersion=\$(curl -s https://services.gradle.org/versions/nightly | jq -r '.version') && for sample in \$(ls | grep -e '^[0-9][0-9].*'); do cd \$sample; ./gradlew wrapper --gradle-version \$gradleVersion; cd -; done`
         - [ ] Run `git clean -fdx` to remove build artifacts from all sample projects
 
-        ## 2. Document components:
+        ## 2. Document components
         
         - [ ] Operating System:
         - [ ] Gradle version: 
