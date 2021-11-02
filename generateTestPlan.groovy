@@ -16,6 +16,7 @@ renderTestPlan(collectAllSamples(new File(System.getProperty('user.dir'))))
 List<Sample> collectAllSamples(File rootDir) {
     rootDir.listFiles()
         .findAll { File file -> file.directory && file.name.matches('\\d+-.*') }
+        .sort { a, b -> a.name.compareTo(b.name) }
         .collect { File sampleDir ->
             String sampleName = sampleDir.name.replaceFirst('\\d+-', '')
             List<Scenario> scenarios = findAndReadAllScenarios(sampleDir)
@@ -64,18 +65,22 @@ void renderTestPlan(List<Sample> samples) {
         ## 1. Set up local test environment
 
         - [ ] Assing this ticket to yourself and move it to the _In Progress_ column.
-        - [ ] Install IntelliJ IDEA, EAP and latest stable release
+        - [ ] Install IntelliJ IDEA (if you don't already have it installed), both the EAP and latest stable releases
           - Tip: you can use the [Toolbox App](https://www.jetbrains.com/toolbox-app/) to manage multiple installations
         - [ ] Clone [this](https://github.com/gradle/ide-smoke-tests) repository
+        - [ ] Download [jq](https://stedolan.github.io/jq/), rename it to "jq" and add it to your PATH  
         - [ ] Update Gradle wrappers in all sample projects to the latest snapshot
-          - One-liner bash update command: `gradleVersion=\$(curl -s https://services.gradle.org/versions/nightly | jq -r '.version') && for sample in \$(ls | grep -e '^[0-9][0-9].*'); do cd \$sample; ./gradlew wrapper --gradle-version \$gradleVersion; cd -; done`
+          - One-liner bash/zsh update command: `gradleVersion=\$(curl -s https://services.gradle.org/versions/nightly | jq -r '.version') && for sample in \$(ls | grep -e '^[0-9][0-9].*'); do cd \$sample; ./gradlew wrapper --gradle-version \$gradleVersion; cd -; done`
         - [ ] Run `git clean -fdx` to remove build artifacts from all sample projects
 
         ## 2. Document components
         
         - [ ] Operating System:
+          - Click the Apple icon, About This Mac
         - [ ] Gradle version: 
+          - run `gradle --version`
         - [ ] IntelliJ Idea EAP version (with build number):
+          - Open JetBrains Toolbox, click the Settings gear icon next to an install, go to the About tab
         - [ ] IntelliJ Idea Stable version (with build number): 
 
         ## 3. Verify scenarios

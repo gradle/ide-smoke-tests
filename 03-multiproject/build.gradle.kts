@@ -8,6 +8,6 @@ tasks.register("checkFeatures") {
 // TODO (scenario) Runs application with Gradle task from included build
 //   Instructions:
 //   - Open the `Gradle tool window`
-//   - Click `Execute Gradle Task` on the toolbar
+//   - Click `Execute Gradle Task` (the Gradlephant button) on the toolbar
 //   - Run the :server-application:app:bootRun task
-//   - Stop the running server
+//   - Stop the running server (Click the Stop button in the run menu)
