@@ -1,0 +1,7 @@
+// TODO (scenario) Detects imported types in groovy pre-compiled script plugins
+//   Instructions
+//   - Wait for the project import to finish
+//   - Check whether the imported type is detected by the IDE
+import com.example.SomeType // Kown issue: IDEA does not detect the type although the build works on the command line
+
+def thing = new SomeType()
