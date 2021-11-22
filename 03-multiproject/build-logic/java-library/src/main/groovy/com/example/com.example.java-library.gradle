@@ -14,3 +14,8 @@ testing {
         }
     }
 }
+
+// TODO (scenario) Groovy precompiled script plugin can reference classes from the same source set
+//   Instructions:
+//   - Check if the line below has a compiler error in IDEA
+println new com.example.SomeType() // Known issue: https://youtrack.jetbrains.com/issue/IDEA-283077
