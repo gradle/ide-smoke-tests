@@ -11,5 +11,5 @@ dependencies {
     //   Instructions:
     //   - Wait for the import to finish
     //   - Check whether the generated dependency accessor is detected by the IDE
-    implementation(libs.commonsLang3) // Known issue: IntelliJ does not detect the accessor
+    implementation(libs.commonsLang3) // Known issue: https://youtrack.jetbrains.com/issue/KTIJ-19370
 }
