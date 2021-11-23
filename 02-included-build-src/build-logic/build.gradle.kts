@@ -12,6 +12,12 @@ repositories {
 group = "org.sample"
 version = "1.0-SNAPSHOT"
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
+
 gradlePlugin {
     plugins {
         create("java-plugin") {
