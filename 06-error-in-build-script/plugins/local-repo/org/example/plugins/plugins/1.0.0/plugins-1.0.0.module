@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.example.plugins",
+    "module": "plugins",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "plugins-1.0.0.jar",
+          "url": "plugins-1.0.0.jar",
+          "size": 5424,
+          "sha512": "bf2d4961eabff4499ebeb4e853060d658148854efd0f7b57df3e3a8f3c85790415729982d433f1221addbfaa7c5581334f3ff9624b0d24b313b792b80b920a27",
+          "sha256": "215a38eb11d150db6b15733443769f97e55dd48a080ec8f036641925526c365e",
+          "sha1": "75d08d10a61e1d5f3ec1e46ec8f1b5920a894a78",
+          "md5": "230094aa06312441f74d413845a8aa03"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "plugins-1.0.0.jar",
+          "url": "plugins-1.0.0.jar",
+          "size": 5424,
+          "sha512": "bf2d4961eabff4499ebeb4e853060d658148854efd0f7b57df3e3a8f3c85790415729982d433f1221addbfaa7c5581334f3ff9624b0d24b313b792b80b920a27",
+          "sha256": "215a38eb11d150db6b15733443769f97e55dd48a080ec8f036641925526c365e",
+          "sha1": "75d08d10a61e1d5f3ec1e46ec8f1b5920a894a78",
+          "md5": "230094aa06312441f74d413845a8aa03"
+        }
+      ]
+    }
+  ]
+}

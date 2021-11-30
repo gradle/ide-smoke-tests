@@ -102,11 +102,14 @@ void renderTestPlan(List<Sample> samples) {
     """.stripIndent(8).strip()
 
     samples.each { Sample sample ->
-        println ""
-        println "### Scenarios in `$sample.name`"
-        println ""
-        sample.scenarios.each { Scenario scenario ->
-            println "- [ ] ${scenario.name}"
+        // omit sample with no scenarios
+        if (sample.scenarios) {
+            println ""
+            println "### Scenarios in `$sample.name`"
+            println ""
+            sample.scenarios.each { Scenario scenario ->
+                println "- [ ] ${scenario.name}"
+            }
         }
     }
     println """
