@@ -1,5 +1,6 @@
 plugins {
     `kotlin-dsl`
+    alias(libs.plugins.jmh) // Known issue: https://youtrack.jetbrains.com/issue/KT-49161
 }
 
 repositories {
