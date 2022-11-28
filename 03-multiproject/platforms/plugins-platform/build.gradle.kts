@@ -9,6 +9,6 @@ dependencies {
         api("com.android.tools.build:gradle:4.1.1")
         api("org.jetbrains.kotlin.android:org.jetbrains.kotlin.android.gradle.plugin:1.5.21")
         api("org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin:1.5.21")
-        api("org.springframework.boot:org.springframework.boot.gradle.plugin:2.4.0")
+        api("org.springframework.boot:spring-boot-gradle-plugin:3.0.0")
     }
 }

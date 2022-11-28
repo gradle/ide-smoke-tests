@@ -9,7 +9,7 @@ testing {
         integTest(JvmTestSuite) {
             useJUnitJupiter()
             dependencies {
-                implementation(project)
+                //implementation(project)
             }
         }
     }
