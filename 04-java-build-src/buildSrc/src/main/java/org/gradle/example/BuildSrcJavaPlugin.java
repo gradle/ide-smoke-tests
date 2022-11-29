@@ -10,6 +10,6 @@ public class BuildSrcJavaPlugin implements Plugin<Project> {
         // TODO (scenario) Java plugin implemented in buildSrc can use another class if there isn't a top-level build.gradle.kts
         //   Instructions:
         //   - the statement below does not show any syntax errors and cmd+click navigates to the implementation
-        new JavaBuildUtils().printString("org.gradle.example.BuildSrcJavaPlugin applied on project " + target.getName()); // Known issue: https://youtrack.jetbrains.com/issue/KTIJ-17595
+        new JavaBuildUtils().printString("org.gradle.example.BuildSrcJavaPlugin applied on project " + target.getName()); // FIXED issue: https://youtrack.jetbrains.com/issue/KTIJ-17595
     }
 }
