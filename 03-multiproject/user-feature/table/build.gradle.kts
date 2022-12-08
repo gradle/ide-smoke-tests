@@ -17,6 +17,7 @@ testing {
     suites {
         val integTest by getting(JvmTestSuite::class) {
             dependencies {
+                implementation(project())
                 implementation(project(":data"))
             }
         }
