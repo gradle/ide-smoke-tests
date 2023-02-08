@@ -4,6 +4,7 @@
 //   - Open the `Build` tool window
 //   - Check the output for warning or error messages
 //   - Check the output for deprecation warnings
+// Known Issue: https://youtrack.jetbrains.com/issue/IDEA-312714
 rootProject.name = "ide-smoke-test-build-src"
 
 // TODO (scenario) Code completion available for settings script

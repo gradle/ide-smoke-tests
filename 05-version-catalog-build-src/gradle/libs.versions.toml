@@ -2,4 +2,4 @@
 commonsLang3 = { module = "org.apache.commons:commons-lang3", version = "3.11" }
 
 [plugins]
-jmh = { id = "me.champeau.jmh", version = "0.6.5" }
+jmh = { id = "me.champeau.jmh", version = "0.6.8" }
