@@ -72,7 +72,7 @@ void renderTestPlan(List<Sample> samples) {
         - [ ] Update Gradle wrappers in all sample projects to the latest snapshot
           - One-liner bash/zsh update command: `gradleVersion=\$(curl -s https://services.gradle.org/versions/nightly | jq -r '.version') && for sample in \$(ls | grep -e '^[0-9][0-9].*'); do cd \$sample; ./gradlew wrapper --gradle-version \$gradleVersion; cd -; done`
         - [ ] Run `git clean -fdx` to remove build artifacts from all sample projects
-        - [ ] Make sure the `ANDROID_SDK_ROOT` environment variable is properly set on you machine
+        - [ ] Make sure the [`ANDROID_HOME`](https://developer.android.com/studio/command-line/variables#envar) environment variable is properly set on you machine
 
         ## 2. Document components
         
