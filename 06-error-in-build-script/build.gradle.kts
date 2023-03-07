@@ -1,6 +1,6 @@
 // TODO (scenario) validate broken script behavior when exception happens in script body
 //   Instructions:
-//   - Remove the comment above the plugins block
+//   - Remove the comment for the plugins block (line 11 and line 26)
 //   - Use the search everywhere dialog to execute the `Load script configurations` command (or use button hovering over the editor)
 //   - Wait for the build failure output
 //   - Verify that the `configTimeValidatedExtension {}` and the `execTimeValidatedExtension {}` are
@@ -27,7 +27,7 @@ throw RuntimeException("Failure in build script")
 
 // TODO (scenario) validate broken script behavior when exception happens in callback
 //   Instructions:
-//   - Remove the comment above the plugins block
+//   - Remove the comment for the plugins block (line 38 and line 55)
 //   - Use the search everywhere dialog to execute the `Load script configurations` command (or use button hovering over the editor)
 //   - Wait for the build failure output
 //   - Verify that the `configTimeValidatedExtension {}` and the `execTimeValidatedExtension {}` are
