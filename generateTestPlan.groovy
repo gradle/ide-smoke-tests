@@ -123,7 +123,7 @@ void renderTestPlan(List<Sample> samples) {
         - [ ] Tag the issue with the `new-regresssion-reported` label if you reported something to JetBrains
         - [ ] Close this issue
         - [ ] Consider improving the test plan
-          - If you find that some scenarios are incorrect, redundant, missing, etc. please provide a PR and ask the @bt-support-team for a review
+          - If you find that some scenarios are incorrect, redundant, missing, etc. please provide a PR and ask the @bt-ide-experience-team for a review
           - You can update the issue template here: https://github.com/gradle/ide-smoke-tests/blob/main/generateTestPlan.groovy
     """.stripIndent(8)
 }
