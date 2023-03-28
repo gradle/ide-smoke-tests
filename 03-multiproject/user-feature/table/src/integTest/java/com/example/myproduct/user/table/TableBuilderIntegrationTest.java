@@ -15,6 +15,9 @@ class TableBuilderIntegrationTest {
     //   - Click the green triangle on the editor sidebar
     //   - Select `Run TableBuilderIntegrationTest`
     //   - Check if the test was executed in the context of the `integTest` task.
+    //     You should see something like
+    //       "Execution finished ':user-feature:table:integTest --tests "com.example.myproduct.user.table.TableBuilderIntegrationTest.testTableBuilding"'."
+    //     at the end of the test console output
 
     @Test
     public void testTableBuilding() {

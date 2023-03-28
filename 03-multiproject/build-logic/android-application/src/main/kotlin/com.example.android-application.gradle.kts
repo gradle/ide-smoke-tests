@@ -6,10 +6,10 @@ plugins {
 group = "com.example.myproduct"
 
 android {
-    compileSdkVersion(28)
+    compileSdk = 33
     defaultConfig {
-        minSdkVersion(24)
-        targetSdkVersion(28)
+        minSdk = 24
+        targetSdk = 33
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

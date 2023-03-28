@@ -86,6 +86,8 @@ void renderTestPlan(List<Sample> samples) {
 
         ## 3. Verify scenarios
 
+        These scenarios are automatically generated from the lines starting with `TODO (scenario)` in the build script and code files.
+
         The sample projects are located in the numbered folders in the repository root. For each project, follow the steps below:
 
         - Launch IDEA EAP

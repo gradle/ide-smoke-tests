@@ -27,6 +27,8 @@ throw RuntimeException("Failure in build script")
 
 // TODO (scenario) validate broken script behavior when exception happens in callback
 //   Instructions:
+//   - Use the search everywhere dialog to execute the `Load script configurations` command (or use button hovering over the editor)
+//     this sets the script config back to where it was without the configuration above
 //   - Remove the comment for the plugins block (line 38 and line 55)
 //   - Use the search everywhere dialog to execute the `Load script configurations` command (or use button hovering over the editor)
 //   - Wait for the build failure output
@@ -52,4 +54,4 @@ execTimeValidatedExtension {
 afterEvaluate {
     throw RuntimeException("Failure in afterEvaluate hook")
 }
-*/
+ */
