@@ -73,6 +73,7 @@ void renderTestPlan(List<Sample> samples) {
           - One-liner bash/zsh update command: `for sample in \$(ls | grep -e '^[0-9][0-9].*'); do cd \$sample; ./gradlew wrapper --gradle-version nightly; cd -; done`
         - [ ] Run `git clean -fdx` to remove build artifacts from all sample projects
         - [ ] Make sure the [`ANDROID_HOME`](https://developer.android.com/studio/command-line/variables#envar) environment variable is properly set on you machine
+        - [ ] Make sure that for scenario `03-multiproject` JDK 17 is used (Spring Boot plugin requirement)
 
         ## 2. Document components
         
