@@ -9,6 +9,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TableBuilderTest {
+
     @Test
     public void testTableBuilding() {
         List<MyProductRelease> testData = Arrays.asList(
