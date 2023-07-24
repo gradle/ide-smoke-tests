@@ -1,6 +1,7 @@
 .gradle
 build
 .idea
+lib/*
 .DS_Store
 local.properties
 .project
