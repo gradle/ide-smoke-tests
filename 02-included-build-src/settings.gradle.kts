@@ -4,6 +4,6 @@
 //   - Open the `Build` tool window
 //   - Check the output for warning or error messages
 //   - Check the output for deprecation warnings
-// Known Issue: https://youtrack.jetbrains.com/issue/IDEA-312714
+// Known Issue: https://youtrack.jetbrains.com/issue/IDEA-328168/Gradle-project-import-produces-deprecation-warnings
 rootProject.name = "ide-smoke-test-included-build-src"
 includeBuild("build-logic")

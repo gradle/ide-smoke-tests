@@ -1,3 +1,3 @@
 rootProject.name = "build-src"
 
-//TODO: Code completion available for settings script here
+//TODO (scenario) Code completion available for settings script here

@@ -1,5 +1,6 @@
 // TODO (scenario) Project import finishes without warning
 //   Instructions:
+//   - Import this project with Java 17
 //   - Wait for the import to finish
 //   - Open the `Build` tool window
 //   - Check the output for warning or error messages
