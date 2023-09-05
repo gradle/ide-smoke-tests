@@ -1,4 +1,4 @@
-rootProject.name = "root"
+rootProject.name = "error-in-build-script"
 
 pluginManagement {
     repositories {

@@ -16,7 +16,7 @@ public class TableBuilder {
     //     - it gives compilation error
     //     - it offers a quick fix to add a dependency on the test module
 
-    // private static com.example.myproduct.user.table.TableBuilderIntegrationTest();
+//     private static com.example.myproduct.user.table.TableBuilderIntegrationTest();
 
     public static List<List<String>> build() {
         List<MyProductRelease> releases = DataRetriever.retrieve().getReleases();

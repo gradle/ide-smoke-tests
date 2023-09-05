@@ -1,1 +1,1 @@
-rootProject.name = "08-property-assignment"
+rootProject.name = "property-assignment"
