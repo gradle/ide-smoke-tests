@@ -49,4 +49,3 @@ tasks {
         mapProperty = mapOf("key" to "value")
     }
 }
-
