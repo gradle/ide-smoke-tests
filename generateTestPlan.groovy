@@ -72,7 +72,8 @@ void renderTestPlan(List<Sample> samples) {
         - [ ] Update Gradle wrappers in all sample projects to the latest snapshot
           - One-liner bash/zsh update command: `for sample in \$(ls | grep -e '^[0-9][0-9].*'); do cd \$sample; ./gradlew wrapper --gradle-version nightly; cd -; done`
         - [ ] Run `git clean -fdx` to remove build artifacts from all sample projects
-        - [ ] Make sure the [`ANDROID_HOME`](https://developer.android.com/studio/command-line/variables#envar) environment variable is properly set on you machine
+        - [ ] Make sure [`Android Home`](https://developer.android.com/studio/command-line/variables#envar) is configured in IDEA
+          -  Go Preferences > Build, Execution, Deployment > Android > Android Project Structure > SDK Location
         - [ ] Make sure that for scenario `03-multiproject` JDK 17 is used (Spring Boot plugin requirement)
 
         ## 2. Document components
