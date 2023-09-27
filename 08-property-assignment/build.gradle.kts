@@ -14,6 +14,7 @@ open class PropertyTestTask : DefaultTask() {
         .objects
         .mapProperty<Any, Any>()
 
+    @Input
     val setProperty = project
         .objects
         .setProperty<Any>()
