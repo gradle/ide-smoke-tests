@@ -8,3 +8,4 @@ local.properties
 .classpath
 .settings
 .vscode
+/lib/*

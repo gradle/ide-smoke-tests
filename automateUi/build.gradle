@@ -5,8 +5,8 @@ buildscript {
 }
 
 plugins {
-    id 'org.jetbrains.intellij' version '1.13.3'
-    id 'org.jetbrains.kotlin.jvm' version '1.8.21'
+    id 'org.jetbrains.intellij' version '1.16.1'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.22'
     id 'java'
 }
 
@@ -16,25 +16,25 @@ repositories {
 }
 
 
-def remoteRobotVersion = "0.11.18"
+def remoteRobotVersion = "0.11.21"
 
 kotlin {
     jvmToolchain(17)
 }
 
 dependencies {
-    testImplementation 'com.intellij.remoterobot:remote-robot:' + remoteRobotVersion
-    testImplementation 'com.intellij.remoterobot:remote-fixtures:' + remoteRobotVersion
+    testImplementation "com.intellij.remoterobot:remote-robot:$remoteRobotVersion"
+    testImplementation "com.intellij.remoterobot:remote-fixtures:$remoteRobotVersion"
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.9.2'
 
 
     // Logging Network Calls
-    testImplementation 'com.squareup.okhttp3:logging-interceptor:4.10.0'
+    testImplementation 'com.squareup.okhttp3:logging-interceptor:4.12.0'
 
     // Video Recording
-    implementation 'com.automation-remarks:video-recorder-junit:5:2.0'
+//    implementation 'com.automation-remarks:video-recorder-junit:5:2.0'
 }
 
 
