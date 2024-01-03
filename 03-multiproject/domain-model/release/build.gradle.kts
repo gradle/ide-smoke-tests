@@ -5,7 +5,6 @@
 //   - Open the `Build` tool window
 //   - Check the output for warning or error messages
 //   - Check the output for deprecation warnings
-// Known Issue: https://youtrack.jetbrains.com/issue/IDEA-312714
 plugins {
     id("com.example.kotlin-library")
 }

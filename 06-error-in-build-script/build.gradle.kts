@@ -7,7 +7,6 @@
 //     - Not marked with compiler error
 //     - Code completion and jump to definition works for `requiredProperty`
 //   - Restore the comment above the plugins block and run project sync to get a clean state
-
 /*
 plugins {
     id("plugin.with.config.time.validation") version "1.0.0"

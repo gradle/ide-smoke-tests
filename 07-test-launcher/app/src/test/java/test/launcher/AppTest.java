@@ -10,10 +10,6 @@ class AppTest {
 
     //TODO (scenario) Running test with TestLauncher API
     // instructions:
-    //  - goto IDEA registry (Shift, Shift, type "registry")
-    //  - enable "gradle.testLauncherAPI.enabled"
-    //    - remove the line above if the registry value is already set to true in the latest released version of IDEA
-    //  - restart IDEA
     //  - execute the first test method
     //  - verify that it passes and there's a 'Configuration cache entry stored' message in the console log
     //  - execute the second test
