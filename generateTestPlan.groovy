@@ -73,7 +73,7 @@ void renderTestPlan(List<Sample> samples) {
         - [ ] Run `git clean -fdx` to remove build artifacts from all sample projects
         - [ ] Make sure [`Android Home`](https://developer.android.com/studio/command-line/variables#envar) is configured in IDEA (Android Plugin required)
           -  Go Preferences > Build, Execution, Deployment > Android > Android Project Structure > SDK Location
-        - [ ] Make sure that for scenario `03-multiproject` JDK 17 is used (Spring Boot plugin requirement)
+        - [ ] Make sure that for scenario `03-multiproject` JDK 17 is used (Spring Boot plugin requirement) https://www.jetbrains.com/help/idea/gradle-jvm-selection.html#jvm_settings
 
         ## 2. Document components
         

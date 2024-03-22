@@ -1,6 +1,6 @@
 // TODO (scenario) Project import finishes without warning
 //   Instructions:
-//   - Import this project with Java 17
+//   - Import this project with Java 17 (https://www.jetbrains.com/help/idea/gradle-jvm-selection.html#jvm_settings)
 //   - Wait for the import to finish
 //   - Open the `Build` tool window
 //   - Check the output for warning or error messages

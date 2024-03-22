@@ -7,7 +7,8 @@ class BuildLogicGroovyPlugin implements Plugin<Project>{
     void apply(Project target) {
         // TODO (scenario) Groovy plugin implemented in included build can use another class
         //   Instructions:
-        //   - the statements below does not show any syntax errors and cmd+click navigates to the implementation
+        //   - the statements below does not show any syntax errors
+        //   - cmd+click navigates to the implementation
         new JavaBuildUtils().printString("org.gradle.example.BuildSrcGroovyPlugin applied on project " + target.getName());
         new GroovyBuildUtils().printString("org.gradle.example.BuildSrcGroovyPlugin applied on project " + target.getName());
     }
