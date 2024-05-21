@@ -107,7 +107,7 @@ void renderTestPlan(List<Sample> samples) {
         ### 3.1 Global issues
         
         The following problems persists across all scenarios (most often IDE or Gradle-plugin related issues).
-        If any of the following scenarios are fixed, delete the line in [`generateTestPlan.groovy`](/generateTestPlan.groovy)
+        If any of the following scenarios are fixed, delete the line in `generateTestPlan.groovy`
         
         - [ ] [IDEA-353787](https://youtrack.jetbrains.com/issue/IDEA-353787/GradleResourceFilterModelBuilder-causes-Gradle-deprecation-warnings-when-projects-are-imported) - When projects are imported, they report a `CopyProcessingSpec` deprecation warning. 
     """.stripIndent(8).strip()
