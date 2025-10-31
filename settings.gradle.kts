@@ -5,4 +5,8 @@
  * For more detailed information on multi-project builds, please refer to https://docs.gradle.org/9.2.0/userguide/multi_project_builds.html in the Gradle documentation.
  */
 
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.9.0"
+}
+
 rootProject.name = "ide-smoke-tests"
