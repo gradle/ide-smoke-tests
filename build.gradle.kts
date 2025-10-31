@@ -1,7 +1,7 @@
 import org.jetbrains.intellij.platform.gradle.TestFrameworkType
 
 plugins {
-    `java-library`
+    kotlin("jvm") version "2.2.21"
     id("org.jetbrains.intellij.platform") version "2.10.3"
 }
 
@@ -17,45 +17,47 @@ repositories {
     }
 }
 
+kotlin {
+    jvmToolchain(21)
+}
+
 dependencies {
-    // JUnit 4 - Required by IntelliJ Platform test framework
-    testImplementation("junit:junit:4.13.2")
+    testImplementation(libs.junit4)
+    testImplementation(libs.junit5.api)
+    testRuntimeOnly(libs.junit5.engine)
+    testRuntimeOnly(libs.junit5.launcher)
 
     // IntelliJ Platform testing
     intellijPlatform {
-        create("IC", "2024.1")
+        create("IC", "2025.1")
         testFramework(TestFrameworkType.Platform)
-        pluginVerifier()
+        testFramework(TestFrameworkType.JUnit5)
+        bundledPlugin("org.jetbrains.plugins.gradle")
     }
 }
 
-intellijPlatform {
-    pluginConfiguration {
-        name = "IDE Smoke Tests"
-    }
-}
+tasks {
+    test {
+        useJUnitPlatform()
 
-tasks.test {
-    // Use Java 25 for running tests
-    javaLauncher.set(javaToolchains.launcherFor {
-        languageVersion.set(JavaLanguageVersion.of(25))
-    })
+        // Configure test environment
+        systemProperty("idea.test.cyclic.buffer.size", "1048576")
+        jvmArgs("-Xmx2g", "-XX:+UseParallelGC")
 
-    // Configure test environment
-    systemProperty("idea.test.cyclic.buffer.size", "1048576")
-    jvmArgs("-Xmx2g", "-XX:+UseParallelGC")
-}
+        // Enable verbose output for tests
+        testLogging {
+            events("passed", "skipped", "failed", "standardOut", "standardError")
+            showExceptions = true
+            showCauses = true
+            showStackTraces = true
+            exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+        }
 
-tasks.register("printVersion") {
-    doLast {
-        println("Project version: $version")
-        println("Gradle version: ${gradle.gradleVersion}")
-        println("Java version: ${JavaVersion.current()}")
-    }
-}
+        // Enable IntelliJ Platform logging
+        systemProperty("idea.log.debug.categories", "#org.jetbrains.plugins.gradle")
+        systemProperty("idea.log.trace.categories", "#org.jetbrains.plugins.gradle.service.project")
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(25)
+        // Enable Gradle daemon logging
+        systemProperty("org.gradle.debug", "true")
     }
 }

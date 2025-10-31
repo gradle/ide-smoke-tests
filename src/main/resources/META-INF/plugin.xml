@@ -1,8 +1,0 @@
-<idea-plugin>
-    <id>org.gradle.ide.smoke.tests</id>
-    <name>IDE Smoke Tests</name>
-    <vendor>Gradle</vendor>
-    <description>Smoke tests for Gradle IDE integration</description>
-
-    <!-- This is a test-only plugin, no actual plugin functionality -->
-</idea-plugin>
