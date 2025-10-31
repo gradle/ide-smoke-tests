@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3ac57f1-af1b-4b63-8537-0ae4818e6f9c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/create_issue_with_test_plan.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/buildSrc/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/buildSrc/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/buildSrc/src/main/groovy/org/gradle/example/BuildSrcGroovyPlugin.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/buildSrc/src/main/groovy/org/gradle/example/GroovyBuildUtils.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/buildSrc/src/main/java/BuildUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/buildSrc/src/main/java/org/gradle/example/BuildSrcJavaPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/buildSrc/src/main/java/org/gradle/example/JavaBuildUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/buildSrc/src/main/kotlin/org/gradle/example/BuildSrcKotlinPlugin.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/buildSrc/src/main/kotlin/org/gradle/example/KotlinBuildUtils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-build-src/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/build-logic/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/build-logic/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/build-logic/src/main/groovy/org/gradle/example/BuildLogicGroovyPlugin.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/build-logic/src/main/groovy/org/gradle/example/GroovyBuildUtils.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/build-logic/src/main/java/org/gradle/example/BuildLogicJavaPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/build-logic/src/main/java/org/gradle/example/JavaBuildUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/build-logic/src/main/kotlin/org/gradle/example/BuildLogicKotlinPlugin.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/build-logic/src/main/kotlin/org/gradle/example/KotlinBuildUtils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-included-build-src/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/admin-feature/config/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/admin-feature/config/src/main/kotlin/com/example/myproduct/admin/config/AdminController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/admin-feature/config/src/main/kotlin/com/example/myproduct/admin/config/VersionRange.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/admin-feature/config/src/test/kotlin/com/example/myproduct/admin/config/AdminControllerTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/admin-feature/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/aggregation/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/aggregation/test-coverage/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/android-app/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/android-app/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/android-app/app/src/main/java/com/example/myproduct/app/MyProductAppActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/android-app/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/android-application/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/android-application/src/main/kotlin/com.example.android-application.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/commons/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/commons/src/main/kotlin/com.example.commons.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/commons/src/main/kotlin/com.example.jacoco.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/groovy-dummy-plugin/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/groovy-dummy-plugin/src/main/groovy/com/example/GroovyDummyExtension.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/groovy-dummy-plugin/src/main/groovy/com/example/GroovyDummyPlugin.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/java-dummy-plugin/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/java-dummy-plugin/src/main/java/com/example/HelperClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/java-dummy-plugin/src/main/java/com/example/JavaDummyPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/java-library/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/java-library/src/main/groovy/com/example/SomeType.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/java-library/src/main/groovy/com/example/com.example.java-library.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/kotlin-library/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/kotlin-library/src/main/kotlin/com.example.kotlin-library.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/report-aggregation/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/report-aggregation/src/main/kotlin/com.example.report-aggregation.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/spring-boot-application/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build-logic/spring-boot-application/src/main/kotlin/com.example.spring-boot-application.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/domain-model/release/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/domain-model/release/src/main/kotlin/com/example/myproduct/model/MyProductRelease.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/domain-model/release/src/main/kotlin/com/example/myproduct/model/MyProductReleaseList.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/domain-model/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/platforms/plugins-platform/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/platforms/product-platform/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/platforms/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/platforms/test-platform/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/server-application/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/server-application/app/src/main/java/com/example/myproduct/server/MyProductAdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/server-application/app/src/main/java/com/example/myproduct/server/MyProductApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/server-application/app/src/main/java/com/example/myproduct/server/MyProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/server-application/app/src/main/java/com/example/myproduct/server/MyProductJsonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/server-application/app/src/main/resources/templates/admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/server-application/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/state/application-state/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/state/application-state/src/main/kotlin/com/example/myproduct/admin/state/ConfigurationState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/state/application-state/src/main/kotlin/com/example/myproduct/admin/state/VersionRangeSetting.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/state/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/user-feature/data/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/user-feature/data/src/main/java/com/example/myproduct/user/data/DataRetriever.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/user-feature/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/user-feature/table/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/user-feature/table/src/integTest/java/com/example/myproduct/user/table/TableBuilderIntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/user-feature/table/src/main/java/com/example/myproduct/user/table/TableBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-multiproject/user-feature/table/src/test/java/com/example/myproduct/user/table/TableBuilderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/buildSrc/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/buildSrc/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/buildSrc/src/main/java/org/gradle/example/BuildSrcJavaPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/buildSrc/src/main/java/org/gradle/example/JavaBuildUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/lib/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/lib/src/main/java/org/gradle/example/MyLibraryClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/lib/src/main/java/org/gradle/example/MyOtherLibraryClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-java-build-src/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-version-catalog-build-src/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-version-catalog-build-src/buildSrc/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-version-catalog-build-src/buildSrc/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-version-catalog-build-src/buildSrc/src/main/kotlin/my-plugin.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-version-catalog-build-src/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-version-catalog-build-src/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-version-catalog-build-src/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-version-catalog-build-src/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-version-catalog-build-src/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-version-catalog-build-src/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-version-catalog-build-src/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.jar.sha256" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.jar.sha512" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.module.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.module.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.module.sha256" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.module.sha512" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.pom.sha256" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/1.0.0/plugins-1.0.0.pom.sha512" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/maven-metadata.xml.sha256" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/org/example/plugins/plugins/maven-metadata.xml.sha512" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/config/time/validation/plugin.with.config.time.validation.gradle.plugin/1.0.0/plugin.with.config.time.validation.gradle.plugin-1.0.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/config/time/validation/plugin.with.config.time.validation.gradle.plugin/1.0.0/plugin.with.config.time.validation.gradle.plugin-1.0.0.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/config/time/validation/plugin.with.config.time.validation.gradle.plugin/1.0.0/plugin.with.config.time.validation.gradle.plugin-1.0.0.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/config/time/validation/plugin.with.config.time.validation.gradle.plugin/1.0.0/plugin.with.config.time.validation.gradle.plugin-1.0.0.pom.sha256" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/config/time/validation/plugin.with.config.time.validation.gradle.plugin/1.0.0/plugin.with.config.time.validation.gradle.plugin-1.0.0.pom.sha512" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/config/time/validation/plugin.with.config.time.validation.gradle.plugin/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/config/time/validation/plugin.with.config.time.validation.gradle.plugin/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/config/time/validation/plugin.with.config.time.validation.gradle.plugin/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/config/time/validation/plugin.with.config.time.validation.gradle.plugin/maven-metadata.xml.sha256" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/config/time/validation/plugin.with.config.time.validation.gradle.plugin/maven-metadata.xml.sha512" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/exec/time/validation/plugin.with.exec.time.validation.gradle.plugin/1.0.0/plugin.with.exec.time.validation.gradle.plugin-1.0.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/exec/time/validation/plugin.with.exec.time.validation.gradle.plugin/1.0.0/plugin.with.exec.time.validation.gradle.plugin-1.0.0.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/exec/time/validation/plugin.with.exec.time.validation.gradle.plugin/1.0.0/plugin.with.exec.time.validation.gradle.plugin-1.0.0.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/exec/time/validation/plugin.with.exec.time.validation.gradle.plugin/1.0.0/plugin.with.exec.time.validation.gradle.plugin-1.0.0.pom.sha256" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/exec/time/validation/plugin.with.exec.time.validation.gradle.plugin/1.0.0/plugin.with.exec.time.validation.gradle.plugin-1.0.0.pom.sha512" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/exec/time/validation/plugin.with.exec.time.validation.gradle.plugin/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/exec/time/validation/plugin.with.exec.time.validation.gradle.plugin/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/exec/time/validation/plugin.with.exec.time.validation.gradle.plugin/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/exec/time/validation/plugin.with.exec.time.validation.gradle.plugin/maven-metadata.xml.sha256" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/local-repo/plugin/with/exec/time/validation/plugin.with.exec.time.validation.gradle.plugin/maven-metadata.xml.sha512" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/src/main/java/org/example/BaseExtension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/src/main/java/org/example/ConfigTimeValidatedExtension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/src/main/java/org/example/ExecTimeValidatedExtension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/src/main/java/org/example/PluginWithConfigurationTimeValidation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/plugins/src/main/java/org/example/PluginWithExecutionTimeValidation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-error-in-build-script/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-test-launcher/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-test-launcher/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-test-launcher/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-test-launcher/app/src/main/java/test/launcher/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-test-launcher/app/src/test/java/test/launcher/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-test-launcher/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-test-launcher/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-test-launcher/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-test-launcher/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-test-launcher/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-test-launcher/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-property-assignment/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-property-assignment/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-property-assignment/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-property-assignment/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-property-assignment/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-property-assignment/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generateTestPlan.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upgrade_gradle.sh" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "hegyibalint"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:gradle/ide-smoke-tests.git",
+    "accountId": "2f607eac-9eef-4ba9-b835-fefdec655831"
+  }
+}]]></component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="34p6r6OIhWPjXVF6v9wKU45or0o" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "bhegyi/automated-tests",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3ac57f1-af1b-4b63-8537-0ae4818e6f9c" name="Changes" comment="" />
+      <created>1761898361331</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761898361331</updated>
+      <workItem from="1761898362382" duration="977000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

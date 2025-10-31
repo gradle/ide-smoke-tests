@@ -1,5 +1,0 @@
-[libraries]
-commonsLang3 = { module = "org.apache.commons:commons-lang3", version = "3.12.0" }
-
-[plugins]
-jmh = { id = "me.champeau.jmh", version = "0.7.2" }
