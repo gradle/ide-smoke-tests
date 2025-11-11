@@ -34,6 +34,7 @@ dependencies {
         testFramework(TestFrameworkType.Platform)
         testFramework(TestFrameworkType.JUnit5)
         bundledPlugin("org.jetbrains.plugins.gradle")
+        bundledPlugin("org.jetbrains.kotlin")
     }
 }
 
